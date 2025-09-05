@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__DynamoTrace",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__DynamoTrace",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/Plugins/Dynamo/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
