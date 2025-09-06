@@ -26,7 +26,7 @@ if ChatterboxIsStopped(chatterbox){
         //Draw the text element
 		_element.draw(_x, _y, _typist);
 		
-		var thisRegion =  _element.region_detect(_x,_y,input_mouse_x(),input_mouse_y());
+		var thisRegion =  _element.region_detect(_x,_y,InputMouseGuiX(),InputMouseGuiY());
 		
 		if thisRegion != undefined {
 			_element.region_set_active(thisRegion,c_yellow,1);
@@ -48,4 +48,6 @@ if ChatterboxIsStopped(chatterbox){
 	}
 
 }
+
+
 

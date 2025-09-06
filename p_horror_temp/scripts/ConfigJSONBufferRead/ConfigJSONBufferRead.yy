@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"initflow",
+  "%Name":"ConfigJSONBufferRead",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"initflow",
+  "name":"ConfigJSONBufferRead",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Config JSON",
+    "path":"folders/Plugins/Config JSON.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

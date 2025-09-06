@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oWallBase",
+  "%Name":"oObjChildExample",
   "eventList":[],
   "managed":true,
-  "name":"oWallBase",
-  "overriddenProperties":[],
+  "name":"oObjChildExample",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oObjTemp","path":"objects/oObjTemp/oObjTemp.yy",},"propertyId":{"name":"dialogue_node","path":"objects/oObjTemp/oObjTemp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"test2\"",},
+  ],
   "parent":{
     "name":"Templates",
     "path":"folders/Objects/Templates.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oObjTemp",
+    "path":"objects/oObjTemp/oObjTemp.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_slippers",
+    "path":"sprites/spr_slippers/spr_slippers.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

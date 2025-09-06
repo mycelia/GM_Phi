@@ -1,4 +1,6 @@
 
+if ( can_start_dialogue() ) cvar_set("playerSpriteSpeed", 0.1);
+
 if ( !can_start_dialogue() )
 {
     vx = 0;
@@ -20,6 +22,8 @@ else
             
             if ( !cutscene_get_state() )
             {
+				//If we're not in a cutscene, force the sprite to stop moving.
+				//If we *were* in a cutscene we would want to respect the cutscene's directions.
                 image_index = 0;
                 image_speed = 0;
                 cvar_set("playerSpriteSpeed", image_speed);
@@ -33,7 +37,7 @@ else
             player_input_queue_update();
             move();
             
-            //var _sprite = asset_get_index(cvar_get("player sprite", "spr_player_right"));
+            //var _sprite = asset_get_index(cvar_get("playerSprite", "spr_player_right"));
             
 			var _sprite = sprite_index;
 			switch( input_queue_direction )
@@ -66,13 +70,16 @@ else
             if global.player_facing_up {
 				sprite_index = spr_player_up;
 			} else sprite_index = _sprite;
-            cvar_set("player sprite", sprite_get_name(sprite_index));
-            image_speed = cvar_get("playerSpriteSpeed", 0.1);
+            cvar_set("playerSprite", sprite_get_name(sprite_index));
+            image_speed = cvar_get("playerSpriteSpeed",0.1);
             if (_new_state) image_index = 1;
+			//If we've just started moving, go immediately to the first walking frame
+			//Looks a bit smoother :)
         break;
   
         case E_PLAYER_STATE.CUTSCENE:
             player_input_queue_clear();
+			
             vx = 0;
             vy = 0;
         break;
@@ -84,7 +91,7 @@ else
             image_speed = 0;
             //sprite_index = spr_player_book;
             //cvar_set("playerSpriteSpeed", image_speed);
-            //cvar_set("player sprite", sprite_get_name(sprite_index));
+            //cvar_set("playerSprite", sprite_get_name(sprite_index));
         break;
          
         //case E_PLAYER_STATE.PUSHED:

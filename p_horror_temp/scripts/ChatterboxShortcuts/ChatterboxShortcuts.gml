@@ -3,8 +3,10 @@
 
 /// @param variable
 /// @param default
-function cvar_get(_variable, _default){
-	return ChatterboxVariableGet(_variable, _default);
+function cvar_get(){
+	var _name    = argument[0];
+	var _default = (argument_count > 1)? argument[1] : CHATTERBOX_VARIABLE_MISSING_VALUE;
+	return ChatterboxVariableGet(_name, _default);
 }
 
 

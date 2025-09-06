@@ -2,6 +2,7 @@
 
 function can_start_dialogue(){
 	
+	if global.dialogue_is_open return false;
 	return true;
 }
 

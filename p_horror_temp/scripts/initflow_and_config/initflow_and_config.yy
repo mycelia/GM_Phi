@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"initflow_and_config",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"initflow_and_config",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -4,7 +4,7 @@ vy = 0;
 movable = true;
 global.player_facing_up = false;
 //Can move around, thus needs to have her position saved
-//global.player_speed = 6;
+global.player_speed = 6;
 //timer = 0;
 
 player_state_init( E_PLAYER_STATE.IDLE );
@@ -23,7 +23,7 @@ against_wall=0;
 timer=0;
 
 movement_direction=-1;
-movement_speed=0;
+move_speed=0;
 friction_enabled=false;
 
 /*
