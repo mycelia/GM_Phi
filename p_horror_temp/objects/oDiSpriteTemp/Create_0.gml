@@ -1,0 +1,1 @@
+show_debug_message("Hello, my name is " + speakerName);

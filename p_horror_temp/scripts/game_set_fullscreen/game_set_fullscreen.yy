@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"game_set_fullscreen",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"game_set_fullscreen",
   "parent":{
-    "name":"Config",
-    "path":"folders/Scripts/Config.yy",
+    "name":"Misc Helpers",
+    "path":"folders/Scripts/Misc Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

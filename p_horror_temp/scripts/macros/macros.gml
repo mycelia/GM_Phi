@@ -1,22 +1,8 @@
 function macros() {
 #region Build Settings
 
-#macro DEV		true
-#macro DEMO     false
-#macro TIMEOUT  (DEMO && !DEV && true) //Two minute reset timer
-#macro WEB		false
 
-#macro USE_ENCRYPTED_TEXT  (!DEV && true)
-	// "Help! All my text is broken!" or "dialogue_parse() is throwing weird errors!"
-	// 
-	// You probably need to update the encrypted text files.
-	// Make sure the current source plaintext .txt files are up to date, then run the game in DEV mode.
-	// Press F1 to open the dev menu and press the [Export encrypted text] button.
-	// Once the system has finished encrypting files, it'll open a browser window showing you where the files are stored.
-	// Add these .dat files as included files using GMS2's IDE. They go in the "data" folder.
-	// Turn off DEV mode and run the game again - the errors will disappear and the text will have been updated.
-
-#macro VERSION        "1.1"
+#macro VERSION        "0.1"
 #macro BUILD_STRING   (VERSION + (DEMO? " DEMO\n" : "\n") + date_datetime_string(GM_build_date))
 
 #macro BOOT_LANGUAGE  "en"
@@ -25,7 +11,8 @@ function macros() {
 
 
 
-#region Config
+#region NPC Config
+//This stuff isn't in the template right now. Hopefully in the future.
 
 #macro NPC_WALK_SPEED              3
 #macro NPC_WALK_ACCEL             (0.1*NPC_WALK_SPEED)
@@ -47,14 +34,11 @@ function macros() {
 
 #region Dev flags
 
-#macro JUJU                   (DEV && file_exists("juju"))
-#macro ELS                    (DEV && file_exists("els"))
 #macro DEBUG                  (DEV && global.__debug)
 #macro DEV_MENU               (DEV && global.__dev_menu)
 #macro WALK_THROUGH_WALLS     (DEBUG && global.__walk_through_walls)
 #macro SEE_HITBOXES           (DEBUG && global.__see_hitboxes)
 #macro INSTANT_FADES          (DEBUG && global.__instant_fades)
-#macro SENTINEL_DODGE         (DEBUG && global.__sentinel_dodge)
 #macro SEE_PATHFINDING        (DEBUG && global.__see_pathfinding)
 #macro LIGHTING               (!DEBUG || global.__lighting)
 
@@ -80,13 +64,7 @@ function macros() {
 #macro STATE_IDLE       "idle"
 #macro STATE_LYING_DOWN "lying down"
 #macro STATE_DEAD		"dead"
-	//Sentinel stuff
-#macro STATE_PATROL      "patrol"
-#macro STATE_RETURN      "return to patrol"
-#macro STATE_CAUGHT      "caught"
-#macro STATE_GUARDING    "guarding"
-#macro STATE_RETURN_SAFE "return to safe"
-#macro STATE_SAFE        "safe"
+
 
 	enum E_PLAYER_STATE
 	{

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"_config_initflow",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"_config_initflow",
   "parent":{
     "name":"Config",
     "path":"folders/Scripts/Config.yy",

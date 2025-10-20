@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"appsurface_update",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"appsurface_update",
   "parent":{
-    "name":"Config",
-    "path":"folders/Scripts/Config.yy",
+    "name":"Misc Helpers",
+    "path":"folders/Scripts/Misc Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

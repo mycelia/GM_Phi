@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"draw_sprite_gui",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"draw_sprite_gui",
   "parent":{
-    "name":"Config",
-    "path":"folders/Scripts/Config.yy",
+    "name":"Misc Helpers",
+    "path":"folders/Scripts/Misc Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"initflow_and_config",
+  "%Name":"_config_characters",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"initflow_and_config",
+  "name":"_config_characters",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Config",
+    "path":"folders/Scripts/Config.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

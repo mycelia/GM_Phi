@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"sprite_get_pos",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"sprite_get_pos",
   "parent":{
-    "name":"Config",
-    "path":"folders/Scripts/Config.yy",
+    "name":"Misc Helpers",
+    "path":"folders/Scripts/Misc Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,6 +5,8 @@ fakeInput = 0;
 
 initflow_player_variables();
 initflow_globals();
+initflow_characters();
+
 
 
 ChatterboxVariableDefault("interact","LMB");

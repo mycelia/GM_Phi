@@ -1,6 +1,5 @@
-var _x = 100;
-var _y = 100;
-var _opty = 150;
+var _w = global.gameW;
+var _h = global.gameH;
 activeRegion = 0;
 
 if ChatterboxIsStopped(chatterbox){
@@ -8,6 +7,19 @@ if ChatterboxIsStopped(chatterbox){
 } else {
 	
 	
+	#region boxes
+	
+	tbox = draw_sprite_gui(global.dibox_sprite,0,global.dibox_x,global.dibox_y);
+	nbox = draw_sprite_gui(global.nbox_sprite,0,global.nbox_x,global.nbox_y);
+	//show_debug_message(tbox);
+	
+	var _x = tbox[0] + global.dibox_padding_x;
+	var _y = tbox[1] + global.dibox_padding_y;
+	var _opty = _y+50;
+	
+	#endregion
+	
+	#region text
 	
 	
 	
@@ -46,6 +58,8 @@ if ChatterboxIsStopped(chatterbox){
 		//If there were no active regions this frame, set hovering to -1;
 		hovering = -1;
 	}
+	
+	#endregion
 
 }
 

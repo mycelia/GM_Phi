@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"freya",
-    "path":"folders/Sprites/talksprites/freya.yy",
+    "path":"folders/Sprites/walksprites/freya.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

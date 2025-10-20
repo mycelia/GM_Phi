@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"sprite_struct_getter",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"sprite_struct_getter",
   "parent":{
-    "name":"Config",
-    "path":"folders/Scripts/Config.yy",
+    "name":"Text Helpers",
+    "path":"folders/Scripts/Text Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"check_sprite_holders",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"check_sprite_holders",
   "parent":{
-    "name":"Config",
-    "path":"folders/Scripts/Config.yy",
+    "name":"Text Helpers",
+    "path":"folders/Scripts/Text Helpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
